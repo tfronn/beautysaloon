@@ -472,6 +472,12 @@ footer i {
 
 footer .social a {
   margin-right: 2rem;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer .social a:hover {
+  transform: translateY(-8px);
 }
 
 /* Back to top*/
@@ -496,3 +502,12 @@ footer .social a {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* responsivo */
+/* extra large devices: 1200 > */
+/* large devices: 1023 > */
+/* large devices: 992 > */
+@media (min-width: 992px) {
+}
+
+/* medium devices : 767 > */

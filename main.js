@@ -55,7 +55,8 @@ scrollReveal.reveal('.text', { delay: 100 }),
   scrollReveal.reveal('.testimonials')
 scrollReveal.reveal('.links', { interval: 100 })
 scrollReveal.reveal('header')
-
+scrollReveal.reveal('footer .brand')
+scrollReveal.reveal('footer .links')
 /* back to top button */
 
 const backToTopButton = document.querySelector('.back-to-top')
