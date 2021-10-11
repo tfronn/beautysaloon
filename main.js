@@ -51,7 +51,18 @@ const scrollReveal = ScrollReveal({
 
 scrollReveal.reveal('.image')
 scrollReveal.reveal('.text', { delay: 100 }),
-  scrollReveal.reveal('.card', { interval: 200 }),
+  scrollReveal.reveal('.card', { interval: 100 }),
   scrollReveal.reveal('.testimonials')
-scrollReveal.reveal('.links', { interval: 200 })
+scrollReveal.reveal('.links', { interval: 100 })
 scrollReveal.reveal('header')
+
+/* back to top button */
+
+const backToTopButton = document.querySelector('.back-to-top')
+window.addEventListener('scroll', function () {
+  if (window.scrollY >= 560) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+})
